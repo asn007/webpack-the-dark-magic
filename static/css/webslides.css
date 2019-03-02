@@ -1655,6 +1655,7 @@ a#next {
 a#previous {
   left: 3.2rem; }
 
+/*
 @media (max-width: 1024px) {
   #navigation {
     -webkit-animation: fadeIn 6s;
@@ -1664,7 +1665,7 @@ a#previous {
   #navigation a,
   #counter {
     display: none; } }
-
+*/
 /*===============================================================
 6. Magic blocks with flexbox (Auto-fill & Equal Height)
 Blocks Links li>a = .flexblock.blink (.blink required)
@@ -3846,4 +3847,9 @@ Slides Index
 
 img {
   margin-top: 4rem !important;
+}
+
+.presentation-link-qr {
+  width: 512px;
+  height: 512px;
 }

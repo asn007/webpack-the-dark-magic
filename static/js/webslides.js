@@ -778,8 +778,8 @@ var PLUGINS = {
   'hash': __WEBPACK_IMPORTED_MODULE_0__plugins_plugins__["a" /* default */].Hash,
   'keyboard': __WEBPACK_IMPORTED_MODULE_0__plugins_plugins__["a" /* default */].Keyboard,
   'nav': __WEBPACK_IMPORTED_MODULE_0__plugins_plugins__["a" /* default */].Navigation,
-  'scroll': __WEBPACK_IMPORTED_MODULE_0__plugins_plugins__["a" /* default */].Scroll,
-  'touch': __WEBPACK_IMPORTED_MODULE_0__plugins_plugins__["a" /* default */].Touch,
+  //'scroll': __WEBPACK_IMPORTED_MODULE_0__plugins_plugins__["a" /* default */].Scroll,
+  //'touch': __WEBPACK_IMPORTED_MODULE_0__plugins_plugins__["a" /* default */].Touch,
   'video': __WEBPACK_IMPORTED_MODULE_0__plugins_plugins__["a" /* default */].Video,
   'youtube': __WEBPACK_IMPORTED_MODULE_0__plugins_plugins__["a" /* default */].YouTube,
   'zoom': __WEBPACK_IMPORTED_MODULE_0__plugins_plugins__["a" /* default */].Zoom
@@ -1079,16 +1079,16 @@ var WebSlides = function () {
 
       nextSlide.show();
 
-      if (this.initialised && this.plugins.touch && this.plugins.touch.isEnabled) {
-        __WEBPACK_IMPORTED_MODULE_2__utils_dom__["a" /* default */].once(nextSlide.el, __WEBPACK_IMPORTED_MODULE_2__utils_dom__["a" /* default */].getAnimationEvent(), function () {
-          nextSlide.el.classList.remove(className);
-          callback.call(_this3, nextSlide);
-        });
+      //if (this.initialised && this.plugins.touch && this.plugins.touch.isEnabled) {
+        //__WEBPACK_IMPORTED_MODULE_2__utils_dom__["a" /* default */].once(nextSlide.el, __WEBPACK_IMPORTED_MODULE_2__utils_dom__["a" /* default */].getAnimationEvent(), function () {
+//          nextSlide.el.classList.remove(className);
+          //callback.call(_this3, nextSlide);
+        //});
 
-        nextSlide.el.classList.add(className);
-      } else {
+//        nextSlide.el.classList.add(className);
+      //} else {
         callback.call(this, nextSlide);
-      }
+  //    }
     }
 
     /**
@@ -1331,7 +1331,7 @@ var WebSlides = function () {
   Keyboard: __WEBPACK_IMPORTED_MODULE_4__keyboard__["a" /* default */],
   Navigation: __WEBPACK_IMPORTED_MODULE_5__navigation__["a" /* default */],
   Scroll: __WEBPACK_IMPORTED_MODULE_6__scroll__["a" /* default */],
-  Touch: __WEBPACK_IMPORTED_MODULE_7__touch__["a" /* default */],
+ // Touch: __WEBPACK_IMPORTED_MODULE_7__touch__["a" /* default */],
   Video: __WEBPACK_IMPORTED_MODULE_8__video__["a" /* default */],
   YouTube: __WEBPACK_IMPORTED_MODULE_9__youtube__["a" /* default */],
   Zoom: __WEBPACK_IMPORTED_MODULE_10__zoom__["a" /* default */]

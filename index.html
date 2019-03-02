@@ -1126,6 +1126,14 @@ width="1160px" height="1160px" viewBox="0 0 1160 1160" enable-background="new 0 
 
     <script>
       window.ws = new WebSlides();
+
+      // Hack to work around Galaxy Watch presenter
+      // It only sends up / down keypresses,
+      // since this presentation is only horizontal it's ok
+      document.addEventListener('keyup', ({ key }) => {
+        if (key === 'ArrowDown') document.querySelector('#next').click()
+        if (key === 'ArrowUp') document.querySelector('#previous').click()
+      })
     </script>
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
